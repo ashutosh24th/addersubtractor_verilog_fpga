@@ -1,2 +1,2 @@
-# FPGA_assignmentcodes
-codes in verilog for FPGA
+verilog code for 4 bit adder
+
