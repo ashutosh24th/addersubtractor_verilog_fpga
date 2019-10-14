@@ -27,8 +27,9 @@ module addsub(
 	output [3:0] C,        // Final output of 4 bits
 	output cout            // carry out
     );
-	wire c1,c2,c3,k0,k1,k2,k3;
-	assign k0=B[0]^Cin;
+	wire c1,c2,c3;
+	wire k0,k1,k2,k3;
+	assign k0=B[0]*(Cin)' + (B[0])'.Cin;
 	assign k1=B[1]^Cin;
 	assign k2=B[2]^Cin;
 	assign k3=B[3]^Cin;
